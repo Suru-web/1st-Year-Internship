@@ -1,0 +1,6 @@
+name=input("Enter your name\n")
+age=int(input("Enter your age\n"))
+branch=input("Enter your branch\n")
+place=input("Enter your place\n")
+t1=(name,age,branch,place)
+print("The details are :",t1)
