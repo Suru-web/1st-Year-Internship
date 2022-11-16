@@ -244,7 +244,7 @@ def kitch():
         global wp
         wp = 0
         if messagebox.askyesno('Cart..', 'Add to cart?') == True:
-            wp = wp + 1
+            #wp = wp + 1
             list.append('Water purifier')
 
     cart9 = tk.Button(window4, text='Add to cart', command=cart9)
@@ -310,12 +310,6 @@ def item_in_cart():
     incart.place(x=100, y=200)
     total_price = tk.Label(window5, text='Your total is : ')
     total_price.place(x=100, y=400)
-
-    def repeat():
-        for i in range(1, len(allincart)):
-            if allincart[i - 1] == allincart[i]:
-                rep = 0
-                rep += 1
 
     def cp_gui():
 
@@ -404,5 +398,16 @@ def quit():
 
 quit_bt = tk.Button(window1, text='Quit', command=quit)
 quit_bt.place(x=300, y=600)
+
+
+
+'''Clear cart'''
+
+
+clear_butt = tk.Button(window1, text="Clear Cart" )
+clear_butt.place(x=470,y=600)
+
+
+
 
 window1.mainloop()
